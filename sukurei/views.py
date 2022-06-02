@@ -5,7 +5,7 @@ from googletrans import Translator
 import re
 tr = Translator(service_urls=['translate.googleapis.com'])
 
-def main(request):
+def index(request):
     URL = "https://www.yahoo.co.jp/"
     rest = requests.get(URL)
     soup = BeautifulSoup(rest.text, "html.parser")
